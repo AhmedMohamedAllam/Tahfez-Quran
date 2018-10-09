@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D19AE87214A869B0074DEB4 /* Juz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19AE86214A869B0074DEB4 /* Juz.swift */; };
+		8D19AE89214A86B20074DEB4 /* Surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19AE88214A86B20074DEB4 /* Surah.swift */; };
+		8D19AE8B214A86B90074DEB4 /* Ayah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19AE8A214A86B90074DEB4 /* Ayah.swift */; };
+		8D19AE90214A96780074DEB4 /* QuranAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19AE8F214A96780074DEB4 /* QuranAPI.swift */; };
 		8D1B242D2149673A00FABEBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B242C2149673A00FABEBA /* AppDelegate.swift */; };
-		8D1B242F2149673A00FABEBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B242E2149673A00FABEBA /* ViewController.swift */; };
+		8D1B242F2149673A00FABEBA /* FehresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B242E2149673A00FABEBA /* FehresViewController.swift */; };
 		8D1B24322149673A00FABEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B24302149673A00FABEBA /* Main.storyboard */; };
 		8D1B24342149674700FABEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B24332149674700FABEBA /* Assets.xcassets */; };
 		8D1B24372149674700FABEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1B24352149674700FABEBA /* LaunchScreen.storyboard */; };
 		8D1B24422149674700FABEBA /* Tahfez_QuranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B24412149674700FABEBA /* Tahfez_QuranTests.swift */; };
 		8D1B244D2149674700FABEBA /* Tahfez_QuranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B244C2149674700FABEBA /* Tahfez_QuranUITests.swift */; };
+		8D32BF4B216AB6F300AEB66D /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D32BF4A216AB6F300AEB66D /* Utiles.swift */; };
+		8D32BF4F216AC58A00AEB66D /* surahs_names.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D32BF4E216ABF8500AEB66D /* surahs_names.txt */; };
+		8D7D8452214C03E700253B4B /* QuranDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8451214C03E700253B4B /* QuranDownloader.swift */; };
+		8D7D8454214C091700253B4B /* QuranCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D8453214C091600253B4B /* QuranCloud.swift */; };
+		8DA22C33216CAB98003A991B /* FehresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C32216CAB98003A991B /* FehresTableViewCell.swift */; };
+		8DA22C35216CACDA003A991B /* Fehres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C34216CACDA003A991B /* Fehres.swift */; };
+		8DA22C37216CD524003A991B /* DisplayQuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C36216CD524003A991B /* DisplayQuranViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D19AE86214A869B0074DEB4 /* Juz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juz.swift; sourceTree = "<group>"; };
+		8D19AE88214A86B20074DEB4 /* Surah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surah.swift; sourceTree = "<group>"; };
+		8D19AE8A214A86B90074DEB4 /* Ayah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayah.swift; sourceTree = "<group>"; };
+		8D19AE8F214A96780074DEB4 /* QuranAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranAPI.swift; sourceTree = "<group>"; };
 		8D1B24292149673A00FABEBA /* Tahfez Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tahfez Quran.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1B242C2149673A00FABEBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D1B242E2149673A00FABEBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D1B242E2149673A00FABEBA /* FehresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FehresViewController.swift; sourceTree = "<group>"; };
 		8D1B24312149673A00FABEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D1B24332149674700FABEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1B24362149674700FABEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,13 @@
 		8D1B24482149674700FABEBA /* Tahfez QuranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tahfez QuranUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1B244C2149674700FABEBA /* Tahfez_QuranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tahfez_QuranUITests.swift; sourceTree = "<group>"; };
 		8D1B244E2149674700FABEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D32BF4A216AB6F300AEB66D /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		8D32BF4E216ABF8500AEB66D /* surahs_names.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = surahs_names.txt; sourceTree = "<group>"; };
+		8D7D8451214C03E700253B4B /* QuranDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranDownloader.swift; sourceTree = "<group>"; };
+		8D7D8453214C091600253B4B /* QuranCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranCloud.swift; sourceTree = "<group>"; };
+		8DA22C32216CAB98003A991B /* FehresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FehresTableViewCell.swift; sourceTree = "<group>"; };
+		8DA22C34216CACDA003A991B /* Fehres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fehres.swift; sourceTree = "<group>"; };
+		8DA22C36216CD524003A991B /* DisplayQuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayQuranViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D19AE85214A86820074DEB4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8D19AE86214A869B0074DEB4 /* Juz.swift */,
+				8D19AE88214A86B20074DEB4 /* Surah.swift */,
+				8D19AE8A214A86B90074DEB4 /* Ayah.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8D19AE8C214A96180074DEB4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22C34216CACDA003A991B /* Fehres.swift */,
+				8D19AE8F214A96780074DEB4 /* QuranAPI.swift */,
+				8D7D8451214C03E700253B4B /* QuranDownloader.swift */,
+				8D7D8453214C091600253B4B /* QuranCloud.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		8D1B24202149673900FABEBA = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +140,16 @@
 		8D1B242B2149673A00FABEBA /* Tahfez Quran */ = {
 			isa = PBXGroup;
 			children = (
+				8DA22C31216CAB6A003A991B /* viewCell */,
+				8DA22C30216CAB54003A991B /* viewController */,
+				8D19AE8C214A96180074DEB4 /* API */,
+				8D19AE85214A86820074DEB4 /* model */,
 				8D1B242C2149673A00FABEBA /* AppDelegate.swift */,
-				8D1B242E2149673A00FABEBA /* ViewController.swift */,
+				8D32BF4A216AB6F300AEB66D /* Utiles.swift */,
 				8D1B24302149673A00FABEBA /* Main.storyboard */,
 				8D1B24332149674700FABEBA /* Assets.xcassets */,
 				8D1B24352149674700FABEBA /* LaunchScreen.storyboard */,
+				8D32BF4E216ABF8500AEB66D /* surahs_names.txt */,
 				8D1B24382149674700FABEBA /* Info.plist */,
 			);
 			path = "Tahfez Quran";
@@ -123,6 +171,23 @@
 				8D1B244E2149674700FABEBA /* Info.plist */,
 			);
 			path = "Tahfez QuranUITests";
+			sourceTree = "<group>";
+		};
+		8DA22C30216CAB54003A991B /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D1B242E2149673A00FABEBA /* FehresViewController.swift */,
+				8DA22C36216CD524003A991B /* DisplayQuranViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		8DA22C31216CAB6A003A991B /* viewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8DA22C32216CAB98003A991B /* FehresTableViewCell.swift */,
+			);
+			path = viewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D32BF4F216AC58A00AEB66D /* surahs_names.txt in Resources */,
 				8D1B24372149674700FABEBA /* LaunchScreen.storyboard in Resources */,
 				8D1B24342149674700FABEBA /* Assets.xcassets in Resources */,
 				8D1B24322149673A00FABEBA /* Main.storyboard in Resources */,
@@ -256,7 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D1B242F2149673A00FABEBA /* ViewController.swift in Sources */,
+				8D19AE90214A96780074DEB4 /* QuranAPI.swift in Sources */,
+				8DA22C33216CAB98003A991B /* FehresTableViewCell.swift in Sources */,
+				8D7D8454214C091700253B4B /* QuranCloud.swift in Sources */,
+				8D1B242F2149673A00FABEBA /* FehresViewController.swift in Sources */,
+				8DA22C35216CACDA003A991B /* Fehres.swift in Sources */,
+				8D19AE8B214A86B90074DEB4 /* Ayah.swift in Sources */,
+				8DA22C37216CD524003A991B /* DisplayQuranViewController.swift in Sources */,
+				8D19AE89214A86B20074DEB4 /* Surah.swift in Sources */,
+				8D7D8452214C03E700253B4B /* QuranDownloader.swift in Sources */,
+				8D32BF4B216AB6F300AEB66D /* Utiles.swift in Sources */,
+				8D19AE87214A869B0074DEB4 /* Juz.swift in Sources */,
 				8D1B242D2149673A00FABEBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
