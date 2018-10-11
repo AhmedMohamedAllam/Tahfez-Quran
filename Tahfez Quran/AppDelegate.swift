@@ -15,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        /*let quranCloud = QuranCloud()
+        
+        let quranCloud = QuranCloud()
         let launchViewController = window?.rootViewController as? FehresViewController
         launchViewController?.quranDownloader = quranCloud
-        */
+ 
         return true
     }
 

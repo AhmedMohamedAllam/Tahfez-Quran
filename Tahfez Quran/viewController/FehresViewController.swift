@@ -11,6 +11,7 @@ import UIKit
 class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
+    var quranDownloader: QuranDownloader!
     
     private let CELLID = "fehresTableViewCellId"
     private var arabicSurahsNames: [String]?
@@ -20,8 +21,6 @@ class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         arabicSurahsNames = Fehres.getSurahsNames(for: .arabic)
         francoSurahsNames = Fehres.getSurahsNames(for: .romanized)
-        
-        
         
     }
     
@@ -43,9 +42,33 @@ class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //
-    //    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let surahNumber = indexPath.row + 1 // increase by one as hehres begins with (0)
+         quranDownloader.getSurah(surahNumber: surahNumber) { (surah, error) in
+            guard error == nil else{
+                self.displayError(error: error!)
+                return
+            }
+            
+            if let surah = surah{
+                self.presentDisplayViewController(with: surah)
+            }
+        }
+    }
+    
+    // instanciate displayViewController and open it
+    private func presentDisplayViewController(with surah: Surah){
+        let displaySurahTextViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "displaySurahText") as! DisplayQuranViewController
+        
+        displaySurahTextViewController.surah = surah
+        DispatchQueue.main.async {
+            self.present(displaySurahTextViewController, animated: true, completion: nil)
+        }
+    }
+    
+    private func displayError(error: Error){
+        print("coudln't load surah due to this error: " + error.localizedDescription)
+    }
     
 }
 

@@ -16,10 +16,9 @@ class Ayah: Codable {
     var numberInSurah: Int?
     var page: Int?
     var ruku: Int?
-    var sajda: Bool?
     var text:String?
     
-    init(hizbQuarter:Int, juz: Int ,manzil: Int ,number: Int ,numberInSurah: Int ,page: Int ,ruku: Int, sajda: Bool, text: String) {
+    init(hizbQuarter:Int, juz: Int ,manzil: Int ,number: Int ,numberInSurah: Int ,page: Int ,ruku: Int, text: String) {
         self.hizbQuarter = hizbQuarter
         self.juz = juz
         self.manzil = manzil
@@ -27,7 +26,6 @@ class Ayah: Codable {
         self.numberInSurah = numberInSurah
         self.page = page
         self.ruku = ruku
-        self.sajda = sajda
         self.text = text
     }
 }

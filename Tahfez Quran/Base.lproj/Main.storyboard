@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,14 +32,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v63-o4-fg1" userLabel="Franco Name Label">
-                                                    <rect key="frame" x="31" y="11.5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="31" y="13.5" width="42" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-F4-e77">
-                                                    <rect key="frame" x="302" y="11.5" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الفاتحة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-F4-e77">
+                                                    <rect key="frame" x="307.5" y="11.5" width="36.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -83,5 +84,105 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="100.29985007496252"/>
         </scene>
+        <!--Display Quran View Controller-->
+        <scene sceneID="jMQ-W5-cS9">
+            <objects>
+                <viewController storyboardIdentifier="displaySurahText" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZPd-I1-UJM" customClass="DisplayQuranViewController" customModule="Tahfez_Quran" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqs-wJ-xii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-Vc-TAK" userLabel="surah name view">
+                                <rect key="frame" x="8" y="28" width="359" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surah_frame" translatesAutoresizingMaskIntoConstraints="NO" id="ccr-LE-mWR" userLabel="surah name image border">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-Ve-9ZP" userLabel="surah name text">
+                                        <rect key="frame" x="174.5" y="19" width="10" height="42"/>
+                                        <color key="backgroundColor" red="1" green="0.22385951649999999" blue="0.13580552000000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ccr-LE-mWR" firstAttribute="leading" secondItem="bUk-Vc-TAK" secondAttribute="leading" id="3EM-yN-uko"/>
+                                    <constraint firstAttribute="bottom" secondItem="ccr-LE-mWR" secondAttribute="bottom" id="5mG-Sy-LvE"/>
+                                    <constraint firstItem="ov6-Ve-9ZP" firstAttribute="centerX" secondItem="bUk-Vc-TAK" secondAttribute="centerX" id="PX5-08-HoD"/>
+                                    <constraint firstItem="ov6-Ve-9ZP" firstAttribute="centerY" secondItem="bUk-Vc-TAK" secondAttribute="centerY" id="YVD-Xq-ggn"/>
+                                    <constraint firstAttribute="height" constant="80" id="d0L-No-Qcm"/>
+                                    <constraint firstItem="ccr-LE-mWR" firstAttribute="top" secondItem="bUk-Vc-TAK" secondAttribute="top" id="hnf-hh-xVt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ccr-LE-mWR" secondAttribute="trailing" id="lDP-az-GqR"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-WH-hzT">
+                                <rect key="frame" x="8" y="116" width="359" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="جارى">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="تحميل">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="السورة">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="...">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XBp-WH-hzT" firstAttribute="firstBaseline" secondItem="ccr-LE-mWR" secondAttribute="baseline" constant="8" id="2Cc-1H-ShF"/>
+                            <constraint firstItem="Et8-JC-daB" firstAttribute="trailing" secondItem="XBp-WH-hzT" secondAttribute="trailing" constant="8" id="2XU-I0-Jbc"/>
+                            <constraint firstItem="bUk-Vc-TAK" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="8" id="A2N-eA-Ckl"/>
+                            <constraint firstItem="Et8-JC-daB" firstAttribute="trailing" secondItem="bUk-Vc-TAK" secondAttribute="trailing" constant="8" id="IOw-xg-kBx"/>
+                            <constraint firstItem="XBp-WH-hzT" firstAttribute="bottom" secondItem="Et8-JC-daB" secondAttribute="bottom" constant="8" id="s1u-zy-ltU"/>
+                            <constraint firstItem="XBp-WH-hzT" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="8" id="x1F-S3-kCe"/>
+                            <constraint firstItem="bUk-Vc-TAK" firstAttribute="top" secondItem="Et8-JC-daB" secondAttribute="top" constant="8" id="x9p-Pn-52S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Et8-JC-daB"/>
+                    </view>
+                    <connections>
+                        <outlet property="quranTextView" destination="XBp-WH-hzT" id="gif-U0-2Yy"/>
+                        <outlet property="surahNameTextView" destination="ov6-Ve-9ZP" id="Svy-kJ-b8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ua-Ek-GtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="100.29985007496252"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="surah_frame" width="800" height="400"/>
+    </resources>
 </document>
