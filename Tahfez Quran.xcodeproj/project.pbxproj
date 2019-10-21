@@ -25,6 +25,8 @@
 		8DA22C33216CAB98003A991B /* FehresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C32216CAB98003A991B /* FehresTableViewCell.swift */; };
 		8DA22C35216CACDA003A991B /* Fehres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C34216CACDA003A991B /* Fehres.swift */; };
 		8DA22C37216CD524003A991B /* DisplayQuranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA22C36216CD524003A991B /* DisplayQuranViewController.swift */; };
+		F9549C89235E2F1E00008BBD /* MSHQ.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F9549C88235E2F1E00008BBD /* MSHQ.TTF */; };
+		F9549C8B235E31F300008BBD /* me_quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9549C8A235E31F200008BBD /* me_quran.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		8DA22C32216CAB98003A991B /* FehresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FehresTableViewCell.swift; sourceTree = "<group>"; };
 		8DA22C34216CACDA003A991B /* Fehres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fehres.swift; sourceTree = "<group>"; };
 		8DA22C36216CD524003A991B /* DisplayQuranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayQuranViewController.swift; sourceTree = "<group>"; };
+		F9549C88235E2F1E00008BBD /* MSHQ.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = MSHQ.TTF; sourceTree = "<group>"; };
+		F9549C8A235E31F200008BBD /* me_quran.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = me_quran.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				8D1B242C2149673A00FABEBA /* AppDelegate.swift */,
 				8D32BF4A216AB6F300AEB66D /* Utiles.swift */,
 				8D1B24302149673A00FABEBA /* Main.storyboard */,
+				F9549C8A235E31F200008BBD /* me_quran.ttf */,
+				F9549C88235E2F1E00008BBD /* MSHQ.TTF */,
 				8D1B24332149674700FABEBA /* Assets.xcassets */,
 				8D1B24352149674700FABEBA /* LaunchScreen.storyboard */,
 				8D32BF4E216ABF8500AEB66D /* surahs_names.txt */,
@@ -297,6 +303,8 @@
 				8D32BF4F216AC58A00AEB66D /* surahs_names.txt in Resources */,
 				8D1B24372149674700FABEBA /* LaunchScreen.storyboard in Resources */,
 				8D1B24342149674700FABEBA /* Assets.xcassets in Resources */,
+				F9549C89235E2F1E00008BBD /* MSHQ.TTF in Resources */,
+				F9549C8B235E31F300008BBD /* me_quran.ttf in Resources */,
 				8D1B24322149673A00FABEBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,12 +515,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D72DRUW999;
 				INFOPLIST_FILE = "Tahfez Quran/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.allam.Tahfez-Quran";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allam.TahfezQuran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,12 +533,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D72DRUW999;
 				INFOPLIST_FILE = "Tahfez Quran/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.allam.Tahfez-Quran";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allam.TahfezQuran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

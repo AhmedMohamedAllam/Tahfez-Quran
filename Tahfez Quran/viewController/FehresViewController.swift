@@ -21,7 +21,6 @@ class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         arabicSurahsNames = Fehres.getSurahsNames(for: .arabic)
         francoSurahsNames = Fehres.getSurahsNames(for: .romanized)
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,7 +50,9 @@ class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
             
             if let surah = surah{
-                self.presentDisplayViewController(with: surah)
+                DispatchQueue.main.async {
+                    self.presentDisplayViewController(with: surah)
+                }
             }
         }
     }
@@ -59,11 +60,9 @@ class FehresViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // instanciate displayViewController and open it
     private func presentDisplayViewController(with surah: Surah){
         let displaySurahTextViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "displaySurahText") as! DisplayQuranViewController
-        
         displaySurahTextViewController.surah = surah
-        DispatchQueue.main.async {
-            self.present(displaySurahTextViewController, animated: true, completion: nil)
-        }
+        displaySurahTextViewController.modalPresentationStyle = .fullScreen
+        self.present(displaySurahTextViewController, animated: true, completion: nil)
     }
     
     private func displayError(error: Error){

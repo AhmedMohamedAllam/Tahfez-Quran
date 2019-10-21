@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qsi-HD-hTR">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="fehresTableViewCellId" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fehresTableViewCellId" id="jUY-Ht-1JC" customClass="FehresTableViewCell" customModule="Tahfez_Quran" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jUY-Ht-1JC" id="m9o-LB-gMf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -38,7 +34,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الفاتحة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tht-F4-e77">
-                                                    <rect key="frame" x="307.5" y="11.5" width="36.5" height="21"/>
+                                                    <rect key="frame" x="307.5" y="11.5" width="36.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -92,8 +88,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="uDU-Qy-Jkj">
+                                <rect key="frame" x="-20" y="-28" width="416" height="724"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-Vc-TAK" userLabel="surah name view">
-                                <rect key="frame" x="8" y="28" width="359" height="80"/>
+                                <rect key="frame" x="8" y="8" width="359" height="80"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surah_frame" translatesAutoresizingMaskIntoConstraints="NO" id="ccr-LE-mWR" userLabel="surah name image border">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="80"/>
@@ -105,7 +104,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ccr-LE-mWR" firstAttribute="leading" secondItem="bUk-Vc-TAK" secondAttribute="leading" id="3EM-yN-uko"/>
                                     <constraint firstAttribute="bottom" secondItem="ccr-LE-mWR" secondAttribute="bottom" id="5mG-Sy-LvE"/>
@@ -117,43 +116,14 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-WH-hzT">
-                                <rect key="frame" x="8" y="116" width="359" height="559"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="12" y="96" width="351" height="579"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="جارى">
+                                    <fragment content="الحمد لله رب العالمين الرحمن الرحب مالك يوم الدين اياك نعبد واياك نستعين اهدناالصرا">
                                         <attributes>
-                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="تحميل">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="السورة">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="CourierNewPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="...">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="AndaleMono"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="25" name="GeezaPro"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" lineSpacing="8" minimumLineHeight="8" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -163,12 +133,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XBp-WH-hzT" firstAttribute="firstBaseline" secondItem="ccr-LE-mWR" secondAttribute="baseline" constant="8" id="2Cc-1H-ShF"/>
-                            <constraint firstItem="Et8-JC-daB" firstAttribute="trailing" secondItem="XBp-WH-hzT" secondAttribute="trailing" constant="8" id="2XU-I0-Jbc"/>
+                            <constraint firstItem="Et8-JC-daB" firstAttribute="trailing" secondItem="XBp-WH-hzT" secondAttribute="trailing" constant="12" id="2XU-I0-Jbc"/>
                             <constraint firstItem="bUk-Vc-TAK" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="8" id="A2N-eA-Ckl"/>
                             <constraint firstItem="Et8-JC-daB" firstAttribute="trailing" secondItem="bUk-Vc-TAK" secondAttribute="trailing" constant="8" id="IOw-xg-kBx"/>
+                            <constraint firstItem="uDU-Qy-Jkj" firstAttribute="trailing" secondItem="Et8-JC-daB" secondAttribute="trailing" constant="20.999999999999886" id="U0A-TS-Cw6"/>
+                            <constraint firstItem="uDU-Qy-Jkj" firstAttribute="bottom" secondItem="Et8-JC-daB" secondAttribute="bottom" constant="29" id="iw1-F4-cuI"/>
+                            <constraint firstItem="uDU-Qy-Jkj" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="-20" id="qw6-z9-bsN"/>
                             <constraint firstItem="XBp-WH-hzT" firstAttribute="bottom" secondItem="Et8-JC-daB" secondAttribute="bottom" constant="8" id="s1u-zy-ltU"/>
-                            <constraint firstItem="XBp-WH-hzT" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="8" id="x1F-S3-kCe"/>
+                            <constraint firstItem="XBp-WH-hzT" firstAttribute="leading" secondItem="Et8-JC-daB" secondAttribute="leading" constant="12" id="x1F-S3-kCe"/>
                             <constraint firstItem="bUk-Vc-TAK" firstAttribute="top" secondItem="Et8-JC-daB" secondAttribute="top" constant="8" id="x9p-Pn-52S"/>
+                            <constraint firstItem="uDU-Qy-Jkj" firstAttribute="top" secondItem="Et8-JC-daB" secondAttribute="top" constant="-28" id="zK1-cv-5c0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Et8-JC-daB"/>
                     </view>
@@ -183,6 +157,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="frame" width="474" height="632"/>
         <image name="surah_frame" width="800" height="400"/>
     </resources>
 </document>
